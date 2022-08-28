@@ -1,0 +1,22 @@
+@keyframes plane {
+  0% {
+    transform: translate(0);
+    rotate: 0deg;
+  }
+  25% {
+    transform: translate(200px, 80px);
+    rotate: -90deg;
+  }
+  50% {
+    transform: translate(200px, 80px);
+    rotate: -180deg;
+  }
+  65% {
+    transform: translate(150px, 65px);
+    rotate: -240deg;
+  }
+  100% {
+    transform: translate(0);
+    rotate: -360deg;
+  }
+}

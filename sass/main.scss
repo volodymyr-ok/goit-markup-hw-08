@@ -1,0 +1,25 @@
+@import './utiles/variables';
+@import './base/base';
+@import './base/section';
+@import './base/container';
+@import './utiles/visually-hidden';
+@import './utiles/animations';
+
+@import './components/logo';
+@import './components/button';
+@import './components/heading';
+@import './components/soc-networks';
+
+@import './layouts/header';
+
+@import './layouts/hero';
+@import './layouts/features';
+@import './layouts/specialization';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/portfolio';
+
+@import './layouts/footer';
+
+@import './components/backdrop';
+@import './components/modal';

@@ -1,0 +1,40 @@
+.soc-networks {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.soc-networks__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $blue-accent;
+  }
+
+  &:hover .soc-networks__icon,
+  &:focus .soc-networks__icon {
+    fill: white;
+  }
+}
+
+.soc-networks__icon {
+  width: 20px;
+  height: 20px;
+
+  fill: $grey-icons-fill;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

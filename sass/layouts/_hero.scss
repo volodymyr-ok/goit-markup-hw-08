@@ -1,0 +1,48 @@
+.hero {
+  text-align: center;
+  background-color: $dark-bg-color;
+  background-image: url(../images/team-work-bg.jpg),
+    linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right 50% bottom 50%;
+
+  // margin-right: auto;
+  // margin-left: auto;
+  // max-width: 1600px;
+  // width: 100%;
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+}
+
+.hero__heading {
+  // margin-bottom: 30px;
+
+  color: $white-accent;
+  // font-style: normal;
+  // font-weight: 900;
+  // font-size: 44px;
+  // line-height: 1.36;
+  // text-align: center;
+  // letter-spacing: 0.06em;
+  // text-transform: uppercase;
+}
+
+.hero__button {
+  padding: 10px 32px;
+
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: $grey-accent;
+    color: inherit;
+  }
+}

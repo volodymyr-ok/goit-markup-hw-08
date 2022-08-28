@@ -1,0 +1,187 @@
+.footer {
+  background-color: $dark-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__logo {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+// ========================== Адреса ==========================
+.address {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 231px;
+  width: 100%;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: $blue-accent;
+  }
+}
+
+.address__location {
+  color: $white-accent;
+}
+
+.address__contact {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+// ========================== Приєднуйтесь ==========================
+.join {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+
+.join__heading {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-accent;
+}
+
+.join__link {
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var($blue-accent);
+  }
+}
+
+.join__icon {
+  fill: $white-accent;
+}
+
+// ========================== Підпишіться ==========================
+.subscribe {
+  margin-left: 93px;
+  margin-top: 12px;
+
+  width: 100%;
+}
+
+.subscribe__heading {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-accent;
+}
+
+.subscribe__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe__field {
+  margin-right: 12px;
+  padding: 15px 16px;
+  width: 358px;
+
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: $transition;
+
+  &:focus {
+    outline: transparent;
+    border: 1px solid $blue-accent;
+  }
+}
+
+.subscribe__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  padding: 10px 28px;
+
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  transition-property: background-color, border;
+  transition-duration: 250ms;
+  transition-timing-function: $transition;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &:focus {
+    outline: transparent;
+    border: 1px solid $blue-accent;
+  }
+
+  &:hover .subscribe__icon {
+    fill: $blue-accent;
+  }
+
+  &:focus .subscribe__icon {
+    fill: $blue-accent;
+
+    animation-name: plane;
+    animation-duration: 1750ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+}
+
+.subscribe__icon {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+
+  fill: $white-accent;
+
+  transform-origin: center;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: $transition;
+}
