@@ -29,16 +29,16 @@
 }
 
 .hero__button {
-  padding: 10px 32px;
+  padding: 10px 24px;
 
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  // transition-property: background-color, color;
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus,
   &:hover {

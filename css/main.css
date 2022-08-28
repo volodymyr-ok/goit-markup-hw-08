@@ -36,6 +36,8 @@ img {
   width: 100%;
   max-width: 450px;
   margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .visually-hidden {
@@ -72,12 +74,11 @@ img {
   }
 }
 .logo {
-  margin-right: 93px;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
@@ -146,8 +147,13 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
+.header__container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .navigation__item {
-  position: relative;
+  margin-bottom: 32px;
 }
 
 .navigation__link {
@@ -158,39 +164,14 @@ img {
 .navigation__link--current {
   color: #2196f3;
 }
-.navigation__link--current::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  border-radius: 2px;
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-}
 
 .communication__contact {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   text-decoration: none;
   color: #757575;
-  display: flex;
-  align-items: center;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.communication__contact:hover, .communication__contact:focus {
-  color: #2196f3;
-}
-.communication__contact:hover .communication__icon, .communication__contact:focus .communication__icon {
-  fill: #2196f3;
 }
 
 .communication__icon {
-  display: inline-block;
+  display: none;
   margin-right: 10px;
   fill: #757575;
   transition-property: fill;
@@ -212,14 +193,11 @@ img {
 }
 
 .hero__button {
-  padding: 10px 32px;
+  padding: 10px 24px;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__button:focus, .hero__button:hover {
   background-color: #f5f4fa;
