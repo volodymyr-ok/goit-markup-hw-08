@@ -8,11 +8,20 @@
 
 .team__list {
   display: flex;
-  justify-content: space-between;
   gap: 30px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .team__member {
+  flex-basis: calc((100% - 60px) / 2);
   background-color: $white-accent;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
