@@ -3,22 +3,30 @@
 }
 
 .header__container {
+  display: flex;
+
   padding-top: 10px;
   padding-bottom: 10px;
-  //   display: flex;
   //   justify-content: space-between;
   //   align-items: center;
-  // }
-
-  // .navigation {
-  //   display: flex;
-  //   align-items: center;
-  // }
-
-  // .navigation__list {
-  //   display: flex;
-  //   gap: 50px;
 }
+
+.header-button {
+  // display: none;
+  width: 40px;
+  padding: 0;
+  border: none;
+}
+
+// .navigation__list {
+// display: flex;
+// gap: 50px;
+// }
+
+// .navigation {
+//   display: flex;
+//   align-items: center;
+// }
 
 // .header__logo {
 //   @media screen and (max-width: 767px) {
@@ -42,6 +50,10 @@
 // }
 
 .navigation__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
   // display: block;
   // padding-top: 32px;
   // padding-bottom: 32px;

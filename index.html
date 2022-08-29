@@ -19,10 +19,10 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a href="./index.html" class="logo"> Web<span class="logo--black-part">Studio</span> </a>
-
         <nav class="navigation">
-          <ul class="navigation__list">
+          <a href="./index.html" class="logo"> Web<span class="logo--black-part">Studio</span> </a>
+
+          <ul class="navigation__list" style="display: none">
             <li class="navigation__item">
               <a href="./index.html" class="navigation__link navigation__link--current">Студія</a>
             </li>
@@ -32,7 +32,7 @@
             <li class="navigation__item"><a href="" class="navigation__link">Контакти</a></li>
           </ul>
 
-          <ul class="communication">
+          <ul class="communication" style="display: none">
             <li class="communication__item">
               <a href="mailto:info@devstudio.com" class="communication__link">
                 <svg class="communication__icon" width="16px" height="12px">
@@ -48,50 +48,88 @@
               >
             </li>
           </ul>
+        </nav>
 
-          <ul class="social-networks">
-            <li class="social-networks__link">
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social-networks__link"
-              >
-                Instagram
-              </a>
+        <button type="button" class="header-button">
+          <svg class="header__close-icon">
+            <use href="./images/icons.svg#open-header-menu"></use>
+            <use href="./images/icons.svg#close-header-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="menu">
+        <nav>
+          <ul class="menu__nav">
+            <li class="menu__nav-item">
+              <a href="./index.html" class="menu__nav-link menu__nav-link--current">Студія</a>
             </li>
-            <li class="social-networks__link">
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social-networks__link"
-              >
-                Twitter
-              </a>
+            <li class="menu__nav-item">
+              <a href="./portfolio.html" class="menu__nav-link">Портфоліо</a>
             </li>
-            <li class="social-networks__link">
-              <a
-                href="https://www.facebook.com/"
-                class="social-networks__link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Facebook
-              </a>
-            </li>
-            <li class="social-networks__link">
-              <a
-                href="https://www.linkedin.com/"
-                class="social-networks__link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Linkedin
-              </a>
-            </li>
+            <li class="menu__nav-item"><a href="" class="menu__nav-link">Контакти</a></li>
           </ul>
         </nav>
+
+        <ul class="menu__contact">
+          <li class="menu__contact-item">
+            <a href="mailto:info@devstudio.com" class="menu__contact-link">
+              <svg class="menu__contact-icon" width="16px" height="12px">
+                <use href="./images/icons.svg#envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="menu__contact-item">
+            <a href="tel:+380961111111" class="menu__contact-link">
+              <svg class="menu__contact-icon" width="10px" height="16px">
+                <use href="./images/icons.svg#smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+
+        <ul class="menu__soc-net">
+          <li class="menu__soc-net-item">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="menu__soc-net-link"
+            >
+              Instagram
+            </a>
+          </li>
+          <li class="menu__soc-net-item">
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="menu__soc-net-link"
+            >
+              Twitter
+            </a>
+          </li>
+          <li class="menu__soc-net-item">
+            <a
+              href="https://www.facebook.com/"
+              class="menu__soc-net-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </a>
+          </li>
+          <li class="menu__soc-net-item">
+            <a
+              href="https://www.linkedin.com/"
+              class="menu__soc-net-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Linkedin
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -101,7 +139,7 @@
         <button data-modal-open type="button" class="hero__button button">Замовити послугу</button>
       </section>
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="features">
@@ -154,9 +192,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="specialization section">
+      <!-- <section class="specialization section">
         <div class="specialization__container container">
           <h2 class="heading">Чим ми займаємося</h2>
           <ul class="specialization__list">
@@ -198,9 +236,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="team__container container">
           <h2 class="team__heading heading">Наша команда</h2>
           <ul class="team__list">
@@ -465,9 +503,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="heading">Постійні клієнти</h2>
 
@@ -521,10 +559,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer__container container">
         <div class="address">
           <a href="./index.html" class="logo footer__logo">
@@ -635,9 +673,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <div data-modal class="backdrop is-hidden">
+    <!-- <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close type="button" class="modal__close">
           <svg class="modal__icon">
@@ -711,7 +749,7 @@
           <button type="submit" class="modal__button button">Відправити</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
   </body>

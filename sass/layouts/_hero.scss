@@ -1,8 +1,7 @@
 .hero {
   text-align: center;
   background-color: $dark-bg-color;
-  background-image: url(../images/team-work-bg.jpg),
-    linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: url(../images/team-work-bg.jpg), $bg-gradient;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right 50% bottom 50%;
