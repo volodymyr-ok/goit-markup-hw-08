@@ -4,15 +4,15 @@
   padding-right: 15px;
   padding-left: 15px;
 
-  @include mobile {
-    width: 480px;
-  }
+  // @include mobile {
+  //   width: 480px;
+  // }
 
-  @include tablet {
-    width: 768px;
-  }
+  // @include tablet {
+  //   width: 768px;
+  // }
 
-  @include desktop {
-    width: 1200px;
-  }
+  // @include desktop {
+  //   width: 1200px;
+  // }
 }
