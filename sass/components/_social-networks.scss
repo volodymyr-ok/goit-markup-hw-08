@@ -17,36 +17,36 @@
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  // width: 44px;
-  // height: 44px;
-  // border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 
-  // transition-property: background-color;
-  // transition-duration: 250ms;
-  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  // &:hover,
-  // &:focus {
-  //   background-color: $blue-accent;
-  // }
+  &:hover,
+  &:focus {
+    background-color: $blue-accent;
+  }
 
-  // &:hover .social-networks__icon,
-  // &:focus .social-networks__icon {
-  //   fill: white;
-  // }
+  &:hover .social-networks__icon,
+  &:focus .social-networks__icon {
+    fill: white;
+  }
 }
 
-// .social-networks__icon {
-//   width: 20px;
-//   height: 20px;
+.social-networks__icon {
+  width: 20px;
+  height: 20px;
 
-//   fill: $grey-icons-fill;
+  fill: $grey-icons-fill;
 
-//   transition-property: fill;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

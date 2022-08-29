@@ -1,13 +1,14 @@
 @import './utiles/variables';
-@import './base/base';
-@import './base/section';
-@import './base/container';
 @import './utiles/visually-hidden';
 @import './utiles/animations';
 @import './utiles/mixins';
+@import './base/base';
+
+@import './base/section';
+@import './base/container';
 
 @import './components/logo';
-@import './components/menu';
+@import './components/mobile-menu';
 @import './components/button';
 @import './components/heading';
 @import './components/social-networks';

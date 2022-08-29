@@ -1,10 +1,25 @@
 .hero {
   text-align: center;
   background-color: $dark-bg-color;
-  background-image: url(../images/team-work-bg.jpg), $bg-gradient;
+  background-image: url(../images/mob/studio/header-mob.jpg), $bg-gradient;
+
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right 50% bottom 50%;
+  // background-position: right 50% bottom 50%;
+  background-position: center;
+  // padding: 0 118px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/studio/header-tablet.jpg), $bg-gradient;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/desktop/studio/header-desktop.jpg), $bg-gradient;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
   // margin-right: auto;
   // margin-left: auto;
@@ -15,25 +30,41 @@
 }
 
 .hero__heading {
-  // margin-bottom: 30px;
+  margin-bottom: 30px;
 
   color: $white-accent;
-  // font-style: normal;
-  // font-weight: 900;
-  // font-size: 44px;
-  // line-height: 1.36;
-  // text-align: center;
-  // letter-spacing: 0.06em;
-  // text-transform: uppercase;
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 1.61;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
-  padding: 10px 24px;
+  // padding: 10px 24px;
+  padding-top: 10px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  padding-left: 24px;
 
   font-weight: 700;
+  font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
+  color: $white-accent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  @media screen and (min-width: 1200px) {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
 
   // transition-property: background-color, color;
   // transition-duration: 250ms;
