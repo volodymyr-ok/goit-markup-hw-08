@@ -8,17 +8,19 @@
   align-items: center;
   position: relative;
 
-  // padding-top: 10px;
-  // padding-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 }
 
 .navigation__list {
   @media screen and (max-width: 767px) {
     display: none;
   }
-
-  // display: flex;
-  // gap: 50px;
+  display: flex;
+  // align-items: flex-end;
+  gap: 50px;
 }
 
 .navigation {
@@ -83,9 +85,11 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-
-  //   display: flex;
-  //   gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .communication__link {
@@ -131,6 +135,10 @@
 .menu__button {
   border: none;
   background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .mobile-menu__bottom-part {

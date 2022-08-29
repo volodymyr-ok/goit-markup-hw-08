@@ -180,7 +180,17 @@ img {
   align-items: center;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
 
+.navigation__list {
+  display: flex;
+  gap: 50px;
+}
 @media screen and (max-width: 767px) {
   .navigation__list {
     display: none;
@@ -241,6 +251,13 @@ img {
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .communication {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 
 .communication__link {
   text-decoration: none;
@@ -274,6 +291,11 @@ img {
 .menu__button {
   border: none;
   background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .menu__button {
+    display: none;
+  }
 }
 
 .mobile-menu__bottom-part {
