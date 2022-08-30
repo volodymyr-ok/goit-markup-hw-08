@@ -6,6 +6,10 @@
 
 .footer__container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  text-align: center;
 }
 
 .footer__logo {
@@ -53,10 +57,10 @@
 }
 
 // ========================== Приєднуйтесь ==========================
-.join {
-  margin-top: 12px;
-  margin-left: 70px;
-}
+// .join {
+//   margin-top: 12px;
+//   margin-left: 70px;
+// }
 
 .join__heading {
   margin-bottom: 20px;
@@ -88,14 +92,14 @@
 
 // ========================== Підпишіться ==========================
 .subscribe {
-  margin-left: 93px;
-  margin-top: 12px;
+  // margin-left: 93px;
+  // margin-top: 12px;
 
   width: 100%;
 }
 
 .subscribe__heading {
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -106,7 +110,10 @@
 
 .subscribe__form {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  // justify-content: space-between;
 }
 
 .subscribe__field {

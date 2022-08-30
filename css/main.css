@@ -99,6 +99,12 @@ img {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 
 .logo--black-part {
   color: #000000;
@@ -184,11 +190,15 @@ img {
 .navigation {
   display: flex;
   align-items: center;
-  gap: 92px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .navigation {
     gap: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation {
+    gap: 92px;
   }
 }
 
@@ -399,9 +409,19 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192px), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/mob/studio/header-mob@2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url(../images/tablet/studio/header-tablet.jpg), linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/tablet/studio/header-tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -409,6 +429,11 @@ img {
     background-image: url(../images/desktop/studio/header-desktop.jpg), linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/desktop/studio/header-desktop@2x.jpg);
   }
 }
 
@@ -501,6 +526,11 @@ img {
   text-transform: uppercase;
   color: #212121;
 }
+@media screen and (min-width: 768px) {
+  .features__label {
+    text-align: start;
+  }
+}
 
 .features__descr {
   font-weight: 400;
@@ -560,10 +590,6 @@ img {
   background-color: #f5f4fa;
 }
 
-.team__container {
-  flex-direction: column;
-}
-
 .team__list {
   display: flex;
   gap: 30px;
@@ -617,6 +643,11 @@ img {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    flex-wrap: nowrap;
+  }
 }
 
 .clients__link {
@@ -747,6 +778,10 @@ img {
 
 .footer__container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  text-align: center;
 }
 
 .footer__logo {
@@ -788,11 +823,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.join {
-  margin-top: 12px;
-  margin-left: 70px;
-}
-
 .join__heading {
   margin-bottom: 20px;
   font-weight: 700;
@@ -818,13 +848,10 @@ img {
 }
 
 .subscribe {
-  margin-left: 93px;
-  margin-top: 12px;
   width: 100%;
 }
 
 .subscribe__heading {
-  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
@@ -834,7 +861,9 @@ img {
 
 .subscribe__form {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .subscribe__field {

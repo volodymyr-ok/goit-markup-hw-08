@@ -1,14 +1,12 @@
 .clients {
   display: flex;
-  // @media screen and (max-width: 767px) {
-  //   flex-direction: column;
-  // }
   flex-wrap: wrap;
 
   gap: 30px;
   justify-content: center;
-  // @media screen and (max-width: 1199px) {
-  // }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .clients__link {

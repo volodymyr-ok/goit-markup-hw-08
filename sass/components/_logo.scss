@@ -6,10 +6,12 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
 
-  // margin-right: 93px;
-  // font-size: 26px;
-  // line-height: 1.19;
   color: $blue-accent;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo--black-part {

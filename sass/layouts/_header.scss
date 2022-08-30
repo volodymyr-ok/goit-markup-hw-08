@@ -17,10 +17,12 @@
 .navigation {
   display: flex;
   align-items: center;
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     gap: 87px;
   }
-  gap: 92px;
+  @media screen and (min-width: 1200px) {
+    gap: 92px;
+  }
 }
 
 .navigation__list {
