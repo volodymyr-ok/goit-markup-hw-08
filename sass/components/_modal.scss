@@ -8,9 +8,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  width: 450px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
   padding: 40px;
-  width: 528px;
-  min-height: 581px;
 
   background-color: $white-accent;
   border-radius: 4px;
@@ -180,17 +183,27 @@
 /* ===================== Чекбокс Checkbox ===================== */
 
 .checkbox {
-  text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+
   user-select: none;
+
+  @media screen and (min-width: 1200px) {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }
 
 .checkbox__label {
   color: $minor-color;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 14px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__origin.visually-hidden {
@@ -229,8 +242,14 @@
 
 .checkbox__policy {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+
   letter-spacing: 0.03em;
   color: $blue-accent;
+  font-size: 12px;
+  line-height: 14px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }

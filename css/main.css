@@ -298,9 +298,9 @@ img {
 }
 
 .menu__button {
+  padding: 10px 0;
   border: none;
   background-color: transparent;
-  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .menu__button {
@@ -313,14 +313,10 @@ img {
 }
 
 .mobile-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  z-index: 1;
   position: fixed;
-  overflow: scroll;
   top: 0;
   right: 0;
-  padding: 48px 40px;
   margin-left: auto;
   margin-right: auto;
   height: 100vh;
@@ -335,6 +331,22 @@ img {
   .mobile-menu {
     display: none;
   }
+}
+
+.mobile-menu .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: auto;
+  padding: 48px 40px;
+  height: 100vh;
+}
+
+.data-menu-close {
+  position: absolute;
+  top: 0;
+  right: 15px;
 }
 
 .mobile-nav__item:not(:last-child) {
@@ -869,7 +881,7 @@ img {
 .subscribe__field {
   margin-right: 12px;
   padding: 15px 16px;
-  width: 358px;
+  width: 100%;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -958,12 +970,17 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 450px;
   padding: 40px;
-  width: 528px;
-  min-height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 .modal .modal__close {
   position: absolute;
@@ -1096,17 +1113,28 @@ img {
 
 /* ===================== Чекбокс Checkbox ===================== */
 .checkbox {
-  text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   user-select: none;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }
 
 .checkbox__label {
   color: #757575;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__origin.visually-hidden {
@@ -1143,8 +1171,14 @@ img {
 
 .checkbox__policy {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #2196f3;
+  font-size: 12px;
+  line-height: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__policy {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }/*# sourceMappingURL=main.css.map */

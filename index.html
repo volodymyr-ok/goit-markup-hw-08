@@ -49,84 +49,91 @@
           </li>
         </ul>
 
-        <button type="button" class="menu__button" data-menu-button>
+        <button type="button" class="menu__button data-menu-button">
           <svg width="40" height="40" aria-label="Тумблер меню">
             <use class="icon-menu" href="./images/icons.svg#open-header-menu"></use>
-            <!-- <use class="icon-cross" href="./images/icons.svg#close-header-menu"></use> -->
           </svg>
         </button>
       </div>
       <!-- xxxxxxxxxxxxxxxxxxxxx MOBILE MENU xxxxxxxxxxxxxxxx -->
 
       <div class="mobile-menu" data-menu>
-        <nav class="mobile-nav">
-          <ul class="mobile-nav__list">
-            <li class="mobile-nav__item">
-              <a href="./index.html" class="mobile-nav__link mobile-nav__link--current">Студія</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a href="" class="mobile-nav__link">Контакти</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="container">
+          <button type="button" class="menu__button data-menu-close">
+            <svg width="40" height="40" aria-label="Тумблер меню">
+              <use class="icon-cross" href="./images/icons.svg#close-header-menu"></use>
+            </svg>
+          </button>
 
-        <div class="mobile-menu__bottom-part">
-          <ul class="mobile-contacts">
-            <li class="mobile-contacts__item">
-              <a href="tel:+380961111111" class="mobile-contacts__tel"> +38 096 111 11 11 </a>
-            </li>
-            <li class="mobile-contacts__item">
-              <a href="mailto:info@devstudio.com" class="mobile-contacts__mail">
-                info@devstudio.com
-              </a>
-            </li>
-          </ul>
+          <nav class="mobile-nav">
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item">
+                <a href="./index.html" class="mobile-nav__link mobile-nav__link--current">Студія</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="" class="mobile-nav__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
 
-          <ul class="mobile-social">
-            <li class="mobile-social__item">
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="mobile-social__link"
-              >
-                Instagram
-              </a>
-            </li>
-            <li class="mobile-social__item">
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="mobile-social__link"
-              >
-                Twitter
-              </a>
-            </li>
-            <li class="mobile-social__item">
-              <a
-                href="https://www.facebook.com/"
-                class="mobile-social__link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Facebook
-              </a>
-            </li>
-            <li class="mobile-social__item">
-              <a
-                href="https://www.linkedin.com/"
-                class="mobile-social__link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Linkedin
-              </a>
-            </li>
-          </ul>
+          <div class="mobile-menu__bottom-part">
+            <ul class="mobile-contacts">
+              <li class="mobile-contacts__item">
+                <a href="tel:+380961111111" class="mobile-contacts__tel"> +38 096 111 11 11 </a>
+              </li>
+              <li class="mobile-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mobile-contacts__mail">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="mobile-social">
+              <li class="mobile-social__item">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mobile-social__link"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li class="mobile-social__item">
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mobile-social__link"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li class="mobile-social__item">
+                <a
+                  href="https://www.facebook.com/"
+                  class="mobile-social__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li class="mobile-social__item">
+                <a
+                  href="https://www.linkedin.com/"
+                  class="mobile-social__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Linkedin
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -199,10 +206,14 @@
           <ul class="specialization__list">
             <li class="specialization__item">
               <img
-                src="./images/doing-1.jpg"
+                src="./images/desktop/studio/img1-desktop.jpg"
+                srcset="
+                  ./images/desktop/studio/img1-desktop.jpg    1x,
+                  ./images/desktop/studio/img1-desktop@2x.jpg 2x
+                "
                 alt="Хтось пише код"
-                width="370"
-                height="294"
+                width="100%"
+                height="auto"
                 class="image"
               />
               <div class="specialization__overlay">
@@ -211,10 +222,14 @@
             </li>
             <li class="specialization__item">
               <img
-                src="./images/doing-2.jpg"
+                src="./images/desktop/studio/img2-desktop.jpg"
+                srcset="
+                  ./images/desktop/studio/img2-desktop.jpg    1x,
+                  ./images/desktop/studio/img2-desktop@2x.jpg 2x
+                "
                 alt="Хтось звіряється з ескізом, тримаючи телефон"
-                width="370"
-                height="294"
+                width="100%"
+                height="auto"
                 class="image"
               />
               <div class="specialization__overlay">
@@ -223,10 +238,14 @@
             </li>
             <li class="specialization__item">
               <img
-                src="./images/doing-3.jpg"
+                src="./images/desktop/studio/img3-desktop.jpg"
+                srcset="
+                  ./images/desktop/studio/img3-desktop.jpg    1x,
+                  ./images/desktop/studio/img3-desktop@2x.jpg 2x
+                "
                 alt="Хтось тримає планшет обираючи колір"
-                width="370"
-                height="294"
+                width="100%"
+                height="auto"
                 class="image"
               />
               <div class="specialization__overlay">
@@ -244,19 +263,28 @@
             <li class="team__member">
               <picture>
                 <source
-                  srcset="./images/mob/studio/ihordemianenko-mob.jpg"
+                  srcset="
+                    ./images/mob/studio/ihordemianenko-mob.jpg    1x,
+                    ./images/mob/studio/ihordemianenko-mob@2x.jpg 2x
+                  "
                   media="(max-width: 767px)"
                 />
                 <source
-                  srcset="./images/tablet/studio/ihordemianenko-tablet.jpg"
+                  srcset="
+                    ./images/tablet/studio/ihordemianenko-tablet.jpg    1x,
+                    ./images/tablet/studio/ihordemianenko-tablet@2x.jpg 2x
+                  "
                   media="(max-width: 1199px)"
                 />
                 <source
-                  srcset="./images/desktop/studio/ihordemianenko-desktop.jpg"
+                  srcset="
+                    ./images/desktop/studio/ihordemianenko-desktop.jpg    1x,
+                    ./images/desktop/studio/ihordemianenko-desktop@2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
                 <img
-                  src="./images/mob/studio/ihordemianenko-mob.jpg"
+                  src="./images/mob/studio/ihordemianenko-mob.jpg 1x, ./images/mob/studio/ihordemianenko-mob@2x.jpg 2x"
                   alt="Ігор Дем'яненко"
                   class="team__photo"
                 />
@@ -321,19 +349,29 @@
             <li class="team__member">
               <picture>
                 <source
-                  srcset="./images/mob/studio/olhariepina-mob.jpg"
+                  srcset="
+                    ./images/mob/studio/olhariepina-mob.jpg    1x,
+                    ./images/mob/studio/olhariepina-mob@2x.jpg 2x
+                  "
                   media="(max-width: 767px)"
                 />
                 <source
-                  srcset="./images/tablet/studio/olhariepina-tablet.jpg"
+                  srcset="
+                    ./images/tablet/studio/olhariepina-tablet.jpg    1x,
+                    ./images/tablet/studio/olhariepina-tablet@2x.jpg 2x
+                  "
                   media="(max-width: 1199px)"
                 />
                 <source
-                  srcset="./images/desktop/studio/olhariepina-desktop.jpg"
+                  srcset="
+                    ./images/desktop/studio/olhariepina-desktop.jpg    1x,
+                    ./images/desktop/studio/olhariepina-desktop@2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
                 <img
-                  src="./images/mob/studio/olhariepina-mob.jpg"
+                  src="./images/mob/studio/olhariepina-mob.jpg 1x, 
+                  ./images/mob/studio/olhariepina-mob@2x.jpg 2x"
                   alt="Ольга Рєпіна"
                   class="team__photo"
                 />
@@ -398,19 +436,28 @@
             <li class="team__member">
               <picture>
                 <source
-                  srcset="./images/mob/studio/mykolatarasov-mob.jpg"
+                  srcset="
+                    ./images/mob/studio/mykolatarasov-mob.jpg    1x,
+                    ./images/mob/studio/mykolatarasov-mob@2x.jpg 2x
+                  "
                   media="(max-width: 767px)"
                 />
                 <source
-                  srcset="./images/tablet/studio/mykolatarasov-tablet.jpg"
+                  srcset="
+                    ./images/tablet/studio/mykolatarasov-tablet.jpg    1x,
+                    ./images/tablet/studio/mykolatarasov-tablet@2x.jpg 2x
+                  "
                   media="(max-width: 1199px)"
                 />
                 <source
-                  srcset="./images/desktop/studio/mykolatarasov-desktop.jpg"
+                  srcset="
+                    ./images/desktop/studio/mykolatarasov-desktop.jpg    1x,
+                    ./images/desktop/studio/mykolatarasov-desktop@2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
                 <img
-                  src="./images/mob/studio/mykolatarasov-mob.jpg"
+                  src="./images/mob/studio/mykolatarasov-mob.jpg 1x, ./images/mob/studio/mykolatarasov-mob@2x.jpg 2x"
                   alt="Микола Тарасов"
                   class="team__photo"
                 />
@@ -475,15 +522,24 @@
             <li class="team__member">
               <picture>
                 <source
-                  srcset="./images/mob/studio/mykhailoyermakov-mob.jpg"
+                  srcset="
+                    ./images/mob/studio/mykhailoyermakov-mob.jpg    1x,
+                    ./images/mob/studio/mykhailoyermakov-mob@2x.jpg 2x
+                  "
                   media="(max-width: 767px)"
                 />
                 <source
-                  srcset="./images/tablet/studio/mykhailoyermakov-tablet.jpg"
+                  srcset="
+                    ./images/tablet/studio/mykhailoyermakov-tablet.jpg    1x,
+                    ./images/tablet/studio/mykhailoyermakov-tablet@2x.jpg 2x
+                  "
                   media="(max-width: 1199px)"
                 />
                 <source
-                  srcset="./images/desktop/studio/mykhailoyermakov-desktop.jpg"
+                  srcset="
+                    ./images/desktop/studio/mykhailoyermakov-desktop.jpg    1x,
+                    ./images/desktop/studio/mykhailoyermakov-desktop@2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
                 <img
@@ -722,7 +778,7 @@
       </div>
     </footer>
 
-    <!-- <div data-modal class="backdrop is-hidden">
+    <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close type="button" class="modal__close">
           <svg class="modal__icon">
@@ -796,7 +852,7 @@
           <button type="submit" class="modal__button button">Відправити</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>

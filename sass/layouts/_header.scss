@@ -134,9 +134,10 @@
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxx MOBILE MENU
 
 .menu__button {
+  padding: 10px 0;
   border: none;
   background-color: transparent;
-  z-index: 1;
+  // z-index: 1;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -148,15 +149,11 @@
 }
 
 .mobile-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  z-index: 1;
   position: fixed;
-  overflow: scroll;
   top: 0;
   right: 0;
 
-  padding: 48px 40px;
   margin-left: auto;
   margin-right: auto;
   height: 100vh;
@@ -173,6 +170,24 @@
   @include tablet {
     display: none;
   }
+}
+
+.mobile-menu .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: auto;
+
+  padding: 48px 40px;
+
+  height: 100vh;
+}
+
+.data-menu-close {
+  position: absolute;
+  top: 0;
+  right: 15px;
 }
 
 .mobile-nav__item {
