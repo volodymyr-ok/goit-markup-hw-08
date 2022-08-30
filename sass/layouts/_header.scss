@@ -240,9 +240,7 @@
 .mobile-social {
   display: flex;
   justify-content: flex-start;
-  // gap: 10px;
-
-  // max-width: 360px;
+  flex-wrap: wrap;
 }
 
 .mobile-social__link {

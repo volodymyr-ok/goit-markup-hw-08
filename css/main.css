@@ -394,6 +394,7 @@ img {
 .mobile-social {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .mobile-social__link {
@@ -998,6 +999,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-width: 100%;
   width: 450px;
   padding: 40px;
   background-color: #ffffff;
