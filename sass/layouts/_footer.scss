@@ -11,9 +11,20 @@
   gap: 60px;
   text-align: center;
 
-  // @media screen and (min-width: 768px) {
-  //   justify-content: space-around;
-  // }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: left;
+    gap: 0;
+  }
 }
 
 .footer__logo {
@@ -28,6 +39,10 @@
 
   max-width: 231px;
   width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .address__item:not(:last-child) {
@@ -61,10 +76,11 @@
 }
 
 // ========================== Приєднуйтесь ==========================
-// .join {
-//   margin-top: 12px;
-//   margin-left: 70px;
-// }
+.join {
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
 
 .join__heading {
   margin-bottom: 20px;
@@ -96,20 +112,19 @@
 
 // ========================== Підпишіться ==========================
 .subscribe {
-  // margin-left: 93px;
-  // margin-top: 12px;
-
   width: 100%;
 }
 
 .subscribe__heading {
-  // margin-bottom: 20px;
-
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $white-accent;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+  }
 }
 
 .subscribe__form {
@@ -117,13 +132,20 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  // justify-content: space-between;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    flex-direction: row;
+    justify-content: start;
+    gap: 0;
+  }
 }
 
 .subscribe__field {
   margin-right: 12px;
   padding: 15px 16px;
   width: 100%;
+  max-width: 450px;
 
   font-size: 16px;
   line-height: calc(20 / 16);
@@ -142,6 +164,10 @@
     outline: transparent;
     border: 1px solid $blue-accent;
   }
+  @media screen and (min-width: 1200px) {
+    max-width: 358px;
+    width: 100%;
+  }
 }
 
 .subscribe__button {
@@ -153,8 +179,9 @@
   padding: 10px 28px;
 
   font-weight: 700;
-  line-height: 1.87;
+  line-height: calc(30 / 16);
   letter-spacing: 0.06em;
+  border: 1px solid $blue-accent;
 
   transition-property: background-color, border;
   transition-duration: 250ms;
