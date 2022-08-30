@@ -8,39 +8,33 @@
   align-items: center;
   position: relative;
 
-  @media screen and (min-width: 768px) {
-    padding-top: 21px;
-    padding-bottom: 21px;
+  // @media screen and (min-width: 768px) {
+  //   padding-top: 21px;
+  //   padding-bottom: 21px;
+  // }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 1199px) {
+    gap: 87px;
   }
+  gap: 92px;
 }
 
 .navigation__list {
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   display: flex;
-  // align-items: flex-end;
+  align-items: flex-end;
   gap: 50px;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.navigation__item {
-  margin-bottom: 32px;
 }
 
 .navigation__item {
   position: relative;
-
-  &:not(:last-child) {
-    @media screen and (min-width: 767px) {
-      display: block;
-      margin-bottom: 32px;
-    }
-  }
 }
 
 .navigation__link {
@@ -52,6 +46,8 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
+  color: inherit;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -85,10 +81,15 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 768px) {
-    display: flex;
+  display: flex;
+
+  @media screen and (max-width: 1199px) {
     flex-direction: column;
     gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 30px;
   }
 }
 
@@ -119,8 +120,6 @@
 }
 
 .communication__icon {
-  display: none;
-
   margin-right: 10px;
 
   fill: $minor-color;
@@ -135,6 +134,7 @@
 .menu__button {
   border: none;
   background-color: transparent;
+  z-index: 1;
 
   @media screen and (min-width: 768px) {
     display: none;

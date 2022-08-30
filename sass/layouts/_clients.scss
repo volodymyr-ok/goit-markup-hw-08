@@ -1,7 +1,14 @@
 .clients {
   display: flex;
-  justify-content: center;
+  // @media screen and (max-width: 767px) {
+  //   flex-direction: column;
+  // }
+  flex-wrap: wrap;
+
   gap: 30px;
+  justify-content: center;
+  // @media screen and (max-width: 1199px) {
+  // }
 }
 
 .clients__link {
