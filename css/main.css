@@ -654,17 +654,12 @@ img {
 .clients {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   justify-content: center;
-}
-@media screen and (min-width: 1200px) {
-  .clients {
-    flex-wrap: nowrap;
-  }
+  gap: 30px;
 }
 
 .clients__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   display: flex;
   justify-content: center;
@@ -674,6 +669,16 @@ img {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 .clients__link:hover, .clients__link:focus {
   border: #2196f3 1px solid;
