@@ -6,6 +6,11 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+
+  &:hover .icon-cross,
+  &:focus .icon-cross {
+    fill: $blue-accent;
+  }
 }
 
 .mobile-menu__bottom-part {

@@ -124,6 +124,9 @@ img {
     display: none;
   }
 }
+.menu__button:hover .icon-cross, .menu__button:focus .icon-cross {
+  fill: #2196f3;
+}
 
 .mobile-menu__bottom-part {
   gap: 32px;
