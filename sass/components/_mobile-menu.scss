@@ -8,7 +8,9 @@
   }
 
   &:hover .icon-cross,
-  &:focus .icon-cross {
+  &:focus .icon-cross,
+  &:hover .icon-menu,
+  &:focus .icon-menu {
     fill: $blue-accent;
   }
 }
@@ -30,7 +32,8 @@
 
   background-color: $white-accent;
 
-  transform: translateY(-100%);
+  transform: translateX(100%);
+  transition: transform 250ms $transition;
 
   &.is-open {
     transform: translate(0);
