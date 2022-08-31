@@ -195,11 +195,16 @@ img {
 
 .mobile-contacts__tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #2196f3;
+}
+@media screen and (min-width: 480px) {
+  .mobile-contacts__tel {
+    font-size: 34px;
+  }
 }
 
 .mobile-contacts__mail {
