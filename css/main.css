@@ -968,7 +968,6 @@ img {
 }
 
 .subscribe__field {
-  margin-right: 12px;
   padding: 15px 16px;
   width: 100%;
   max-width: 450px;
@@ -991,6 +990,7 @@ img {
   .subscribe__field {
     max-width: 358px;
     width: 100%;
+    margin-right: 12px;
   }
 }
 
